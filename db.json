@@ -1,0 +1,11 @@
+{
+    "Q1" : {
+        "Who killed Thanos?" : {
+            "Iron Man" : true,
+            "Thor" : false,
+            "Gamora": false,
+            "Wanda" : false
+        }
+    }
+        
+}

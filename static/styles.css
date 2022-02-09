@@ -1,0 +1,111 @@
+@import url('https://fonts.googleapis.com/css2?family=Noto+Sans:wght@700&family=Poppins:wght@500&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Rubik:wght@300;500&display=swap');
+
+* {
+    font-family: 'Rubik', sans-serif;;
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+header {
+    width: 100%;
+    color: #fff;
+    padding: 5px;
+    background-color: #e22121;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding-left: 20px;
+    padding-right: 20px;
+}
+
+body {
+    background-color: #fdfffc;
+}
+
+h1 {
+    font-weight: 500;
+    font-size: 64;
+}
+
+p {
+    font-weight: 300;
+    font-size: 20px;
+}
+
+.btn_start {
+    margin-top: 25px;
+    background-color: #000;
+    color: #fff;
+    border: none;
+    padding: 10px;
+    text-align: center;
+    text-decoration: none;
+    font-size: 16px;
+    font-weight: 500;
+    width: 20%;
+}
+
+.btn_start:hover {
+    background-color: #e22121;
+    box-shadow: #000;
+}
+
+.btn_again {
+    background-color: #000;
+    color: #fff;
+    border: none;
+    padding: 15px 15px;
+    text-align: center;
+    text-decoration: none;
+    font-size: 16px;
+    border-radius: 25px;
+    font-weight: 500;
+    margin-top: 5px;
+    margin-bottom: 5px;
+}
+
+.btn_again:hover {
+    background-color: #fdfffc;
+    color: #000;
+}
+
+.container {
+    display: flex;
+    justify-content: center;
+    margin-top: 200px;
+    margin-bottom: 200px;
+    text-align: center;
+}
+.mv_logo {
+    width: 50%;
+    padding: 20px;
+}
+
+.img_logo {
+    width: 10%;
+}
+
+.card {
+    padding: 10px;
+    width: 75%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    border-radius: 5px;
+    background-color: #fafafa;
+    box-shadow: 0 0 8px 0px rgb(170 167 167);
+    margin-right: auto;
+    margin-left: auto;
+    margin-top: 25px;
+}
+
+.question_container {
+    margin-top: 10px;
+    margin-bottom: 10px;
+    margin-left: 5px;
+    margin-right: 5px;
+}
+
+
