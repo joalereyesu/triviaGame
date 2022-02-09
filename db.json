@@ -1,11 +1,142 @@
 {
-    "Q1" : {
-        "Who killed Thanos?" : {
-            "Iron Man" : true,
-            "Thor" : false,
-            "Gamora": false,
-            "Wanda" : false
-        }
+    "Who killed Thanos?" : {
+        "Iron Man" : true,
+        "Thor" : false,
+        "Gamora": false,
+        "Wanda" : false
+    },
+    "During which war did Captain America get his superhuman abilities?": 
+    {
+        "Civil War":false,
+        "World War I":false,
+        "Worlds War II":true,
+        "The Cold War":false
+    },
+    "What is the name of Peter Quill’s home planet?":
+    {
+        "Mordor":false,
+        "Goddricks Hollow":false,
+        "Earth":true,
+        "Morag":false
+    },
+    "Which of the following characters did not disappear during the 'blip'?": 
+    {
+        "Spiderman":false,
+        "Black Panther":false,
+        "Doctor Strange":false,
+        "Rocket":true
+    },
+    "Where was Natasha Romanoff born?":
+    {
+       "Germany":false,
+        "Russia":true,
+        "United States of America": false,
+        "Wakanda":false
+    },
+    "In which of the following movies does the character Taserface appear?": 
+    {
+        "Blade":false,
+        "X-Men":false,
+        "Guardians of the Galaxy Vol 2":true,
+        "Deadpool":false
+    },
+    "How did Steve Rogers and Sam Wilson meet for the first time?":
+    {
+        "While running":true,
+        "At a bar":false,
+        "In the army":false,
+        "At a museum":false
+    },
+    "What was Steven Strange’s career before he learned to use magic?":
+    {
+        "An Accountant":false,
+        "A Lawyer":false,
+        "A Neurosurgeon":true,
+        "An Astronaut":false
+    },
+    "What type of radiation gave Bruce Banner the ability to turn into the Hulk?":
+    {
+        "Gamma":true,
+        "Infrared":false,
+        "Ultraviolet":false,
+        "Microwave":false
+    },
+    "What is the name of the planet that the Soul Stone can be found on?":
+    {
+        "Titan":false,
+        "Vormir":true,
+        "Morag": false,
+        "Xandar":false
+    },
+    "What are the leaders of the TVA in the Loki Series called?":
+    {
+        "Peacekeepers":false,
+        "Gatekeepers":false,
+        "Stonekeepers":false,
+        "Timekeepers":true
+    },
+    "What does Thanos want to bring to the universe?":
+    {
+        "Hope":false,
+        "Balance":true,
+        "Peace":false,
+        "Destruction":false
+    },
+    "The Flerkens are a race of extremely dangerous aliens that resembles what?":
+    {
+        "Cats":true,
+        "Ducks":false,
+        "Reptiles":false,
+        "Raccoons":false
+    },
+    "Before becoming Vision, what is the name of Iron Man’s A.I. butler?":
+    {
+        "H.O.M.E.R.":false,
+        "J.A.R.V.I.S.":true,
+        "A.L.F.R.E.D.":false,
+        "M.A.R.V.I.N.":false
+    },
+    "What is the alien race Loki sends to invade Earth in The Avengers?":
+    {
+        "The Chitauri":true,
+        "The Skrulls":false, 
+        "The Kree":false,
+        "The Flerkens":false
+    },
+    "Who was the last holder of the Space Stone before Thanos claims it for his Infinity Gauntlet?":
+    {
+        "Thor":false,
+        "Loki":true,
+        "The Collector":false, 
+        "Tony Stark":false
+    },
+    "About which city do Hawkeye and Black Widow often reminisce?":
+    {
+        "Budapest":true,
+        "Prague":false,
+        "Istanbul":false,
+        "Sokovia":false
+    },
+    "Who does Thanos sacrifice to acquire the Soul Stone?":
+    {
+        "Nebula":false,
+        "Ebony Maw":false,
+        "Cull Obsidian":false,
+        "Gamora":true
+    },
+    "Where do Lady Sif and Volstagg keep the Reality Stone after the Dark Elves tried to steal it?":
+    {
+        "On Vormir":false,
+        "In a vault on Asgard":false,
+        "Inside Sif’s sword":false,
+        "To the Collector":true
+    },
+    "What is Captain America’s shield made of?":
+    {
+        "Adamantium":false,
+        "Vibranium":true,
+        "Promethium":false,
+        "Carbonadium":false
     }
-        
-}
+
+} 
