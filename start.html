@@ -4,6 +4,7 @@
         <title>Trivia Game</title>
         <link rel="stylesheet" href="./static/styles.css">
         <meta charset="UTF-8" name="viewport" content="width=device-width, initial-scale=1.0">
+        <script type="module" src="trivia.js"></script>
     </head>
     <body>
         <div class="container">
@@ -13,9 +14,8 @@
                 <div>
                     <p>Welcome to the Marvel Trivia game! The game consists of five multiple choice questions. Show us that you're a MCU fan. Good luck! </p>
                 </div>
-                <a href="game.html"><button class="btn_start">Play</button></a>
+                <a href="game.html"><button class="btn_start" onclick="loadQuestions()">Play</button></a>
             </div>
         </div>
     </body>
-    <script src="trivia.js"></script>
 </html>
