@@ -26,12 +26,49 @@ body {
 
 h1 {
     font-weight: 500;
-    font-size: 64;
+    font-size: 64px;
 }
 
 p {
     font-weight: 300;
-    font-size: 20px;
+    font-size: 24px;
+}
+
+.choices_container {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    margin-top: 10px;
+    margin-bottom: 10px;
+}
+
+label {
+    margin-right: 15px;
+    line-height: 32px;
+    font-size: 18px;
+}
+  
+input {
+    appearance: none;
+
+    border-radius: 50%;
+    width: 16px;
+    height: 16px;
+
+    border: 2px solid #999;
+    transition: 0.2s all linear;
+    margin-right: 5px;
+
+    position: relative;
+}
+  
+input:checked {
+    border: 6px solid #e22121;
+}
+
+input[type="radio"]:checked + label::after{
+    background: #e22121;
+
 }
 
 .btn_start {
@@ -114,7 +151,10 @@ p {
     margin-bottom: 8px;
 }
 
-.choice {
-    
+.center {
+    display: flex;
+    align-items: center;
+    justify-content: center;
 }
+
 

@@ -1,5 +1,5 @@
 db = {
-    "Questions": [
+    Questions: [
         "Who killed Thanos?",
         "During which war did Captain America get his superhuman abilities?",
         "What is the name of Peter Quill’s home planet?",
@@ -21,7 +21,7 @@ db = {
         "Where do Lady Sif and Volstagg keep the Reality Stone after the Dark Elves tried to steal it?",
         "What is Captain America’s shield made of?"
     ],
-    "Choices" :[
+    Choices :[
         {
             "Iron Man" : true,
             "Thor" : false,
@@ -146,7 +146,6 @@ db = {
     ]
 }
 
-
 function loadQuestions(){
     var fiveQs = [];
     var fiveCs = [];
@@ -157,38 +156,61 @@ function loadQuestions(){
     }
     for (let i = 0; i < 5; i++){
         let option = document.getElementById('option');
-        let div = document.createElement("div");
         let p = document.createElement("p");
         p.innerHTML = (i+1)+". "+fiveQs[i];
         p.classList.add('question')
         option.appendChild(p);
         let op = fiveCs[i];;
         let options = Object.keys(op);
-        console.log(options);
-        for (let i = 0; i < options.length; i++) {
-            let li = document.createElement("li");
-            li.innerHTML = options[i];
-            option.appendChild(li);
+        let correct = Object.values(op)
+        let div = document.createElement("div");
+        div.classList.add('choices_container');
+        for (let j = 0; j < options.length; j++) {
+            let input = document.createElement("input");
+            let label = document.createElement("label");
+            option.appendChild(div);
+            input.setAttribute("type", "radio");
+            input.setAttribute("name", "option"+i);
+            input.setAttribute("id", correct[j]);
+            input.setAttribute("value", correct[j]);
+            label.setAttribute("for", options[j]);
+            label.innerHTML = options[j];
+            div.appendChild(input);
+            div.appendChild(label);
         }
+        option.appendChild(div);
     }
 }
 
-//let questions, choices = loadQuestions();
-
-// function getTriviaInfo(qs, cs) {
-//     let questions = document.getElementById('question');
-//     let choices = document.getElementById('choices');
-//     for (let i = 0; i < 5; i++){
-//         let p = document.createElement("p");
-//         p.innerHTML = qs[i];
-//         questions.appendChild(p);
-//         let options = Object.keys(cs[i]);
-//         for (let i = 0; i < options.length; i++) {
-//             let li = document.createElement("li");
-//             li.innerHTML = options[i];
-//             choices.appendChild(li);
-//         }
+function checkAnswers(){
+    let score = 0;
+    for (let i = 0; i < 5; i++){
+        let choice = document.getElementsByName("option"+i);
+        console.log(choice[i].checked);
+        // for (let j = 0; j <= 4; j++){
+        //     if (choice[j].checked){
+        //         console.log(choice[j].value)
+        //         if (choice[j].value == 'true'){
+        //             score = score + 20;
+        //             console.log(score);
+        //         }
+                // console.log(answer);
+                // for (let y = 0; y <= db.Choices.length; y++){
+                //     let choices = Object.keys(db.Choices[y]);
+                //     console.log(choices);
+                //     let correct = Object.values(db.Choices[y]);
+                //     for (let k = 0; k<= choices.length; k++){
+                //         if (answer == choices[k])
+                //         {
+                //             if(correct[k] === true){
+                //                 score = score + 20;
+                //             }
+                //         }
+                //     }
+                // }
+            
         
-//     }
-// }
+    }
+}
+
 
