@@ -29,6 +29,10 @@ h1 {
     font-size: 64px;
 }
 
+h2 {
+    text-align: center;
+}
+
 p {
     font-weight: 300;
     font-size: 24px;
@@ -72,7 +76,7 @@ input[type="radio"]:checked + label::after{
 }
 
 .btn_start {
-    margin-top: 25px;
+    margin-top: 15px;
     background-color: #000;
     color: #fff;
     border: none;
@@ -136,6 +140,7 @@ input[type="radio"]:checked + label::after{
     margin-right: auto;
     margin-left: auto;
     margin-top: 25px;
+    margin-bottom: 20px;
 }
 
 .question_container {
@@ -157,4 +162,28 @@ input[type="radio"]:checked + label::after{
     justify-content: center;
 }
 
+.score_container {
+    padding: 10px;
+    width: 75%;
+    display:block;
+    align-items: center;
+    justify-content: center;
+    border-radius: 5px;
+    background-color: #fafafa;
+    box-shadow: 0 0 8px 0px rgb(170 167 167);
+    margin-right: auto;
+    margin-left: auto;
+    margin-top: 25px;
+    margin-bottom: 25px;
+    text-align: center;
+}
 
+.score {
+    margin-top: 8px;
+    margin-bottom: 8px;
+    position: absolute;
+}
+
+.wrong {
+   text-align: center;
+}

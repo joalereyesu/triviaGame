@@ -171,7 +171,7 @@ function loadQuestions(){
             option.appendChild(div);
             input.setAttribute("type", "radio");
             input.setAttribute("name", "option"+i);
-            input.setAttribute("id", correct[j]);
+            input.setAttribute("id", options[j]);
             input.setAttribute("value", correct[j]);
             label.setAttribute("for", options[j]);
             label.innerHTML = options[j];
@@ -184,33 +184,50 @@ function loadQuestions(){
 
 function checkAnswers(){
     let score = 0;
-    for (let i = 0; i < 5; i++){
-        let choice = document.getElementsByName("option"+i);
-        console.log(choice[i].checked);
-        // for (let j = 0; j <= 4; j++){
-        //     if (choice[j].checked){
-        //         console.log(choice[j].value)
-        //         if (choice[j].value == 'true'){
-        //             score = score + 20;
-        //             console.log(score);
-        //         }
-                // console.log(answer);
-                // for (let y = 0; y <= db.Choices.length; y++){
-                //     let choices = Object.keys(db.Choices[y]);
-                //     console.log(choices);
-                //     let correct = Object.values(db.Choices[y]);
-                //     for (let k = 0; k<= choices.length; k++){
-                //         if (answer == choices[k])
-                //         {
-                //             if(correct[k] === true){
-                //                 score = score + 20;
-                //             }
-                //         }
-                //     }
-                // }
-            
-        
+    let correcAnswers = [];
+    let choice = document.getElementsByTagName('input');
+    for (let k = 0; k < choice.length; k++){
+        if(choice[k].value == 'true'){
+            correcAnswers.push(choice[k].id);
+        }
     }
-}
+    for (let i = 0; i < choice.length; i++){
+        if (choice[i].checked){
+            let answer = choice[i].value;
+            if (answer == "true"){
+                score = score + 20;
+                for (let j = 0; j <= correcAnswers.length; j++)
+                {
+                    if (correcAnswers[j] == choice[i].id){
+                        correcAnswers.splice(j, 1);
+                    }
+                }
+                if (score >= 100){
+                    break;
 
+                }
+            }
+            else {
+                score = score;
+                
+            }
+        }
+    }
+    let div1 = document.getElementById('score');
+    div1.classList.add('score_container');
+    let h2 = document.createElement('h2');
+    h2.innerHTML = "You got "+score+"!";
+    //h2.classList.add('score');
+    div1.appendChild(h2);
+    console.log(correcAnswers);
+    for (let y = 0; y < correcAnswers.length; y ++){
+        let p = document.createElement('p');
+        p.classList.add('wrong');
+        p.innerHTML = "Correct answer: "+correcAnswers[y];
+        div1.appendChild(p);
+    }
+
+    
+
+}
 
